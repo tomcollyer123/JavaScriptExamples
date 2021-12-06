@@ -1,0 +1,20 @@
+<!-- Write a function that creates a new h1 element, adds text to that element and then adds the h1 to the tree of the document on load of the HTML page. -->
+<html>
+<head>
+    <script>
+        // run this function when the document is loaded 
+        window.onload = function(){
+            // create a new h1 element
+            const heading = document.createElement("h1");
+            //  add text to the element
+            const heading_text = document.createTextNode("Hello");
+            heading.appendChild(heading_text);
+            document.body.appendChild(heading);
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>
+
+
